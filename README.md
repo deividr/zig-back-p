@@ -1,8 +1,12 @@
 # Desafio técnico
 
-Temos aqui uma API já pré-configurada usando o [Express](https://expressjs.com/pt-br/) para encapsulamento dos recursos HTTP.
-Já temos configurado também o Typescript, Eslint e Prettier.
-Existem 3 rotas abertas já configuradas.
+Essa API é um simples cadastro de Livros, com inclusão e posterior obtenção das informações.
+
+### O Que já tem pré-configurado:
+
+- O [Express](https://expressjs.com/pt-br/) para encapsulamento dos recursos HTTP.
+- [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/) e [Prettier](https://prettier.io/).
+- Rotas de inclusão de book, leitura por id e leitura por título;
 
 ## Proposta de implementação:
 
@@ -35,5 +39,10 @@ Existem 3 rotas abertas já configuradas.
 ### 3. Alterar o endpoint `/create-book` para receber o token no "Header - Authentication - Bearer Token":
 
 - Validar se o token recebido está correto;
-- Se não, retornar erro HTTP informando que a requisição não foi autorizada;
+- Se não, retornar erro HTTP informando que houve erro na autenticação;
 - Se sim, retornar como já está hoje implementado;
+
+### OPCIONAL:
+
+- Desenvolver um teste para a sua implementação usando o [Jest](https://jestjs.io/pt-BR/);
+- Reorganizar melhor a estrutura do projetos em pastas e arquivos contextualizados;
